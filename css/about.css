@@ -1,0 +1,122 @@
+/* about.css — page-specific styles for about.html
+   Imports the shared base styles (variables, navbar, footer, join, etc.)
+   then adds styles used only on the About page. */
+@import url('style.css');
+
+/* ===== Page Hero (About) ===== */
+.page-hero {
+  background: linear-gradient(135deg, var(--navy), var(--blue));
+  color: var(--white);
+  text-align: center;
+  padding: 3.5rem 1.5rem;
+}
+.page-hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+.page-hero .tagline {
+  color: var(--light);
+  font-weight: 300;
+}
+
+/* ===== About Section ===== */
+.about-section {
+  padding: 3rem 1.5rem;
+  background-color: var(--white);
+}
+.about-block {
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+  text-align: center;
+}
+.about-block h2 {
+  color: var(--blue);
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+}
+.about-block p {
+  color: var(--navy);
+}
+
+/* ===== Values Grid ===== */
+.values-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto 2.5rem auto;
+}
+.value-card {
+  background-color: var(--pale);
+  border: 1px solid var(--light);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.value-card:hover {
+  transform: translateY(-6px);
+}
+.value-card h3 {
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.value-card p {
+  font-size: 0.9rem;
+  color: var(--blue);
+}
+
+/* ===== Stats Block ===== */
+.stats-block {
+  background-color: var(--pale);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  max-width: 900px;
+}
+.stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--navy);
+}
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--blue);
+}
+
+/* Dark CTA button used on light backgrounds like .join */
+.cta-button-dark {
+  display: inline-block;
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.cta-button-dark:hover {
+  background-color: var(--blue);
+  transform: translateY(-3px);
+}
+
+/* ===== Responsive (About-specific) ===== */
+@media (max-width: 600px) {
+  .page-hero h1 {
+    font-size: 1.8rem;
+  }
+}

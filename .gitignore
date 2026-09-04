@@ -1,0 +1,14 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Node (only relevant if you later add build tools)
+node_modules/
+package-lock.json
+
+# Logs
+*.log
